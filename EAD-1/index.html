@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+</head>
+<body>
+    <h1>Formulário de Contato</h1>
+    
+    <form action="recebe_dados.php" method="POST">
+        <p>
+            <label>Nome Completo:</label><br>
+            <input type="text" name="nome" required>
+        </p>
+        
+        <p>
+            <label>Email:</label><br>
+            <input type="email" name="email" required>
+        </p>
+        
+        <p>
+            <label>Assunto:</label><br>
+            <select name="assunto" required>
+                <option value="">Selecione</option>
+                <option value="Dúvida">Dúvida</option>
+                <option value="Sugestão">Sugestão</option>
+                <option value="Reclamação">Reclamação</option>
+            </select>
+        </p>
+        
+        <p>
+            <label>Mensagem:</label><br>
+            <textarea name="mensagem" required></textarea>
+        </p>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
